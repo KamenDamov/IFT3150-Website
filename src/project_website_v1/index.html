@@ -28,16 +28,23 @@
     </header>
     <section id="about">
         <h2>About the Project</h2>
-        <p>This project, in collaboration with Ian Arawjo (Assistant Researcher at University of Montreal and Mila). The objective of the project is to </p>
+        <p>The present projects objective is to create a benchmark of LLMs' performance in regards of notational dynamic grounding. 
+            Dynamic grounding is the act of creating a common ground of understanding with a person that is built through several iterations of a conversation. This common ground could be built through different mechanisms, i.e. spoken language, handwritten notations, gestures, etc... 
+            Given this definition, can we dynamically ground the novel converstionnal agents that are LLMs through notations? How do we build and maintain common ground with LLMs through notations? What's the abstraction limit so that common ground is maintained? We will explore these topics and try to respond to these questions 
+            by engaging with different state of the art models. <br>
+            Given that we will be working on a benchmark, we have to build a tool to collect users notational and textual conversations with LLMs. This would require developping an interface that allows the user to interface with the LLMs through handwritten notations, and written or spoken natural language. This application would support text and image output, so Transformer (text generation) and diffusion models (image generation) will be queried from the backend. The tech stack that will be used is a React.js interface for frontend with tldraw for sketching and drawing notations, and a Flask server with a PostgreSQL database. Once this product is deployed, we will collect data from the users' conversations.
+            Through these collected conversations we will evaluate the models' capacity, and finally write an academic paper regarding our findings through this research process. <br>
+            It's important to note that given that this is a completely novel area of study, it is possible that this project takes a different turn than what is mentionned above.
+        </p>
     </section>
     <!-- Weekly updates sections -->
     <section id="week1" class="week">
         <h2>Week 1</h2>
-        <p>Details of week 1 progress...</p>
+        <p>Engaged in exploratory conversations with ChatGPT by building up handwritten notations in the field of computer science, math, operations and informally evaluate how well the model was able to understand my notations, how well it could recall and extrapolate to new notations.</p>
     </section>
     <section id="week2" class="week">
         <h2>Week 2</h2>
-        <p>Details of week 2 progress...</p>
+        <p>Worked on the conversational tools' server side using Flask (python library) by creating a connection to OpenAI's API models and rendering them to the frontend. This demanded adding features to the frontend (recording of conversations by affecting unique ids, and keeping track of the current conversations history). In this case, a conversation is more than one iteration of user inputs (image and text) and model outputs (image and text). As a first step, conversations are saved in a file system. The next step will be to set up the PostgreSQL database.</p>
     </section>
     <section id="week3" class="week">
         <h2>Week 3</h2>
